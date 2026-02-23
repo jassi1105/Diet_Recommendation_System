@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6fff7;
+  color: #333;
+}
+
+/* 🔹 Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6cc351;
+  padding: 15px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.bro a {
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bro a:hover {
+  color: #e0ffe3;
+}
+
+/* 🔹 Welcome Section */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1556912172-45b7abe8aef5?auto=format&fit=crop&w=1350&q=80')
+      center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-text {
+  max-width: 700px;
+}
+
+.welcome-text p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.welcome-text button {
+  background-color: #6cc351;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.welcome-text button:hover {
+  background-color: #57a745;
+}
+
+/* 🔹 Benefits Section */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+  color: #2e7d32;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.benefits {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 220px;
+  text-align: center;
+}
+
+.benefits:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.benefits img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.benefits p {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .bro {
+    margin-top: 10px;
+  }
+
+  .bro a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .welcome-text p {
+    font-size: 18px;
+  }
+
+  .benefits {
+    width: 90%;
+  }
+}
